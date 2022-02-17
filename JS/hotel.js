@@ -3,11 +3,11 @@ let stockHabitacionIndividual = 3;
 let precioHabitacionIndividual = 1000;
 
 let habitacionFamiliar = 'Familiar';
-let stockHabitacionFamiliar = '3';
-let precioHabitacionFamiliar = '2000'
+let stockHabitacionFamiliar = 3;
+let precioHabitacionFamiliar = 2000;
 
 function menu(){
-    let opcion = prompt("Menu: \n1 - Tipo de Habitaciones\n2 - Saludar\nESC- Salir")
+    let opcion = prompt("Menu: \n1 - Tipo de Habitaciones\n2 - Saludar\nS- Salir")
 
     switch(opcion){
         case "1":
@@ -18,7 +18,7 @@ function menu(){
             saludar("Bienvenido a");
             menu();
             break;
-        case "ESC":
+        case "S":
             saludar("Muchas gracias por su visita")
             break;
         default:
@@ -73,7 +73,7 @@ function compra(stock, precio, nombre) {
 
 function reservarHabitacion(){
 
-    let cantidadHabitacionesReservadas = parseInt(prompt("Ingrese la cantidad de habitaciones distintas que quiere comprar"))
+    let cantidadHabitacionesReservadas = parseInt(prompt("Ingrese la cantidad de habitaciones distintas que quiere reservar"))
     
 
     for (let i = 0; i < cantidadHabitacionesReservadas; i++) {
@@ -87,7 +87,7 @@ function reservarHabitacion(){
             compra(stockHabitacionFamiliar, precioHabitacionFamiliar, habitacionFamiliar)
         }
         else {
-            alert('No disponemos de ese tipo de habitación')
+            alert("No disponemos de ese tipo de habitación")
         }
     }
 
@@ -95,6 +95,3 @@ function reservarHabitacion(){
 }
 
 menu()
-
-
-
