@@ -18,35 +18,35 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "Amoladora",
             precio: 2000,
             stock: 10,
-            img: "Images/amoladora.webp"
+            img: "/Assets/img/amoladora.webp"
         },
         {
             id: 2,
             nombre: "Engrapadora",
             precio: 120,
             stock: 10,
-            img: "Images/engrapadora.webp"
+            img: "/Assets/img/engrapadora.webp"
         },
         {
             id: 3,
             nombre: "Pistola de Calor",
             precio: 210,
             stock: 102,
-            img: "Images/Pistola_calor.webp"
+            img: "/Assets/img/pistola_calor.webp"
         },
         {
             id: 4,
             nombre: "Taladro",
             precio: 600,
             stock: 1, 
-            img:"Images/taladro.webp"
+            img:"/Assets/img/taladro.webp"
         },
         {
             id: 5,
             nombre: "Rotopercutor",
             precio: 80,
             stock: 12,
-            img:"Images/taladro.webp"
+            img:"/Assets/img/taladro.webp"
         }
     ]
 
