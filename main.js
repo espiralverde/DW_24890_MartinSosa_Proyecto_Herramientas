@@ -18,36 +18,44 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "Amoladora",
             precio: 2000,
             stock: 10,
-            img: "/Assets/img/amoladora.webp"
+            img: "Assets/img/amoladora.webp"
         },
         {
             id: 2,
             nombre: "Engrapadora",
             precio: 120,
             stock: 10,
-            img: "/Assets/img/engrapadora.webp"
+            img: "Assets/img/engrapadora.webp"
         },
         {
             id: 3,
             nombre: "Pistola de Calor",
             precio: 210,
             stock: 102,
-            img: "/Assets/img/pistola_calor.webp"
+            img: "Assets/img/pistola_calor.webp"
         },
         {
             id: 4,
             nombre: "Taladro",
             precio: 600,
             stock: 1, 
-            img:"/Assets/img/taladro.webp"
+            img:"Assets/img/taladro.webp"
         },
         {
             id: 5,
             nombre: "Rotopercutor",
             precio: 80,
             stock: 12,
-            img:"/Assets/img/taladro.webp"
+            img:"Assets/img/taladro.webp"
+        },
+        {
+            id: 6,
+            nombre: "Martillo",
+            precio: 800,
+            stock: 125,
+            img:"./Assets/img/taladro.webp"
         }
+
     ]
 
     function renderizarProductos() {
@@ -65,14 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
-            miNodoPrecio.textContent = `${info.precio}$`;
+            miNodoPrecio.textContent = info.precio;
             //Stock
             const miNodoStock = document.createElement('p');
             miNodoStock.classList.add('card-text');
-            miNodoStock.textContent = `${info.stock}`;
+            miNodoStock.textContent = info.stock;
             //Img
-            const miNodoImg = document.createElement('img');
+            let miNodoImg = document.createElement('img');
             miNodoImg.classList.add('card-img');
+            miNodoImg.src = '${info.img}'
+            //miNodoImg.src = 'Assets/img/taladro.webp'
+
+            
+            
+            
+            
             // Boton 
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
