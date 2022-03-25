@@ -8,3 +8,6 @@
 aside {
   float: right;
 }
+.card-img {
+  width: auto;
+}

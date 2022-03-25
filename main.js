@@ -16,44 +16,44 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             nombre: "Amoladora",
-            precio: 2000,
+            precio: 6500,
             stock: 10,
             img: "Assets/img/amoladora.webp"
         },
         {
             id: 2,
             nombre: "Engrapadora",
-            precio: 120,
+            precio: 2900,
             stock: 10,
             img: "Assets/img/engrapadora.webp"
         },
         {
             id: 3,
             nombre: "Pistola de Calor",
-            precio: 210,
+            precio: 3500,
             stock: 102,
             img: "Assets/img/pistola_calor.webp"
         },
         {
             id: 4,
             nombre: "Taladro",
-            precio: 600,
+            precio: 14000,
             stock: 1, 
             img:"Assets/img/taladro.webp"
         },
         {
             id: 5,
             nombre: "Rotopercutor",
-            precio: 80,
+            precio: 16000,
             stock: 12,
             img:"Assets/img/taladro.webp"
         },
         {
             id: 6,
-            nombre: "Martillo",
-            precio: 800,
+            nombre: "Set Bocallaves",
+            precio: 7500,
             stock: 125,
-            img:"./Assets/img/taladro.webp"
+            img:"Assets/img/set_bocallaves.webp"
         }
 
     ]
@@ -73,16 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
-            miNodoPrecio.textContent = info.precio;
+            miNodoPrecio.textContent = `$ ${info.precio}`;
             //Stock
-            const miNodoStock = document.createElement('p');
-            miNodoStock.classList.add('card-text');
-            miNodoStock.textContent = info.stock;
+            // const miNodoStock = document.createElement('p');
+            // miNodoStock.classList.add('card-text');
+            // miNodoStock.textContent = info.stock;
             //Img
             let miNodoImg = document.createElement('img');
             miNodoImg.classList.add('card-img');
-            miNodoImg.src = '${info.img}'
-            //miNodoImg.src = 'Assets/img/taladro.webp'
+            //miNodoImg.src = 'Assets/img/pistola_calor.webp'
+            miNodoImg.src = `${info.img}`
 
             
             
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Insertamos
             miNodoCardBody.appendChild(miNodoTitle);
             miNodoCardBody.appendChild(miNodoPrecio);
-            miNodoCardBody.appendChild(miNodoStock);
+            // miNodoCardBody.appendChild(miNodoStock);
             miNodoCardBody.appendChild(miNodoImg);
             miNodoCardBody.appendChild(miNodoBoton);
             miNodo.appendChild(miNodoCardBody);
