@@ -104,9 +104,7 @@ function limpiarHTML(){
     contenedorCarrito.innerHTML= '';
 }
 
-function vaciarCarrito(){
-    // contenedorCarrito.innerHTML= '';
-    
+function vaciarCarrito(){   
     while (contenedorCarrito.firstElementChild){
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)
     } 
@@ -128,6 +126,7 @@ function vaciarCarrito(){
             )
         }
         })  
+        localStorage.clear();
 }
 
 // Fetch desde archivo JSON
