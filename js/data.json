@@ -1,0 +1,29 @@
+[
+    {
+        "dataId" : 10,
+        "nombre" : "DISCO ABRASIVO DE CORTE",
+        "tamanio" : "115X1,6 MM",
+        "cantidad" : "50 Unidades",
+        "codigo" : "DA1116-50",
+        "precio" : "500",
+        "img" : "img/DA1116-50.jpg"
+    },
+    {
+        "dataId" : 20,
+        "nombre" : "DISCO DIAMANTADO",
+        "tamanio" : "115 MM",
+        "cantidad" : "30 Unidades",
+        "codigo" : "DM180",
+        "precio" : "5000",
+        "img" : "img/DM180.jpg"
+    },
+    {
+        "dataId" : 30,
+        "nombre" : "DISCO ABRASIVO FLAP",
+        "tamanio" : "115X1,6 MM",
+        "cantidad" : "10 Unidades",
+        "codigo" : "DF1580",
+        "precio" : "2500",
+        "img" : "img/DF1580.jpg"
+    }
+]

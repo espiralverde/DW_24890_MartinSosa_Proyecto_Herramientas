@@ -2,54 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="/CSS/estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SteelBit | Store</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/skeleton.css">
 </head>
+
 <body>
-    
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/Hamilton_logo_chico2.png" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <button id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</button>
+                                    <!-- <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </header>
 
-    <section class="content-section col-sm-8 row" id="items">
-
-
-    </section>
-
-    <aside class="col-sm-4">
-        <h2>Carrito</h2>
-        <!-- Elementos del carrito -->
-        <ul id="carrito" class="list-group"></ul>
-        <hr>
-        <!-- Precio total -->
-        <p class="text-right">Total: <span id="total"></span></p>
-        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-    </aside>
-
-
-
-
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="img">
-                
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>RÁPIDA ENTREGA</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>ALTA CALIDAD</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>STOCK DISPONIBLE</p>
+                </div>
             </div>
-            <!-- Elementos generados a partir de JS -->
-            <!-- <main id="items" class="col-sm-8 row">
-                
-            </main> -->
-            <!-- Carrito -->            
-            
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src='main.js'></script>
+
+    <div id="lista-herramientas" class="container">
+        <h1 id="encabezado" class="encabezado">Herramientas</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/engrapadora.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Engrapadora Clavadora</h4>
+                        <p>Hamilton</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$6.614<span class="u-pull-right ">$6.296</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/lijadora.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Lijadora Roto Orbital Eléctrica</h4>
+                        <p>Hamilton</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$9.414  <span class="u-pull-right ">$7.870</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/amoladora.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Amoladora Angular 820w</h4>
+                        <p>Hamilton</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$8.896  <span class="u-pull-right ">$8.233</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="3">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/taladro.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Taladro Percutor Eléctrico 950w</h4>
+                        <p>Hamilton</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$11.141  <span class="u-pull-right ">$10.654</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/set_bocallaves.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Set de Bocallaves 108 Piezas</h4>
+                        <p>Yosemite</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$19.490  <span class="u-pull-right ">$18.399</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="5">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/set_fresas.webp" class="imagen-herramienta u-full-width">
+                    <div class="info-card">
+                        <h4>Juego de 24 Fresas Encastre 1/4</h4>
+                        <p>Hamilton</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$11.304  <span class="u-pull-right ">$10.384</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" dataId="6">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+
+        <div id="contenido" class="row">
+
+        </div>
+        <button type="button" id="cargarJSON" class="verInsumos">
+            Ver Insumos
+        </button>
 
 
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">Insumos</a>
+                        <a class="enlace" href="#">Manuales</a>
+                        <a class="enlace" href="#">Repuestos</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">¿Quiénes Somos?</a>
+                        <a class="enlace" href="#">Servicio Técnico</a>
+                        <a class="enlace" href="#">Comercios</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
